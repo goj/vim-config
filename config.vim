@@ -246,6 +246,9 @@ let python_highlight_builtins = 1
 let python_highlight_exceptions = 1
 let python_highlight_space_errors = 1
 
+au VimEnter * let g:fuf_coveragefile_exclude .= '|__pycache__'
+au VimEnter * let g:fuf_coveragefile_exclude .= '|ct_report|.beam$'
+
 nmap <Leader>b :FufBuffer<CR>
 nmap <Leader>f :FufCoverageFile<CR>
 nmap <Leader>c :FufQuickfix<CR>
