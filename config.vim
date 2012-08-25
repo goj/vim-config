@@ -191,6 +191,7 @@ autocmd BufRead,BufNewFile sys.config set filetype=erlang
 autocmd BufRead,BufNewFile app.config set filetype=erlang
 autocmd BufRead,BufNewFile *.app,*.app.src set filetype=erlang
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile *.sql set filetype=mysql
 
 autocmd FileType html,asciidoc,tex set spell
 
