@@ -4,6 +4,7 @@ lang en_GB.UTF-8
 set runtimepath+=~/.config/vim/
 set runtimepath+=~/.config/vim/ultisnips
 set runtimepath+=~/.config/vim/tcomment
+set runtimepath+=~/.config/vim/fuf
 let mapleader='\'
 
 filetype plugin on
