@@ -5,11 +5,15 @@ set nocompatible
 filetype plugin on
 filetype indent on
 
+set guifont=Bitstream\ Vera\ Sans\ Mono\ 11
+set guioptions=grLa
 set title " change title-bar of xterm
 set vb t_vb=
 set noerrorbells
 set showcmd
 autocmd GUIEnter * set vb t_vb=
+set clipboard=autoselect,unnamedplus
+
 set backupdir=~/tmp/vim-backup,~/.tmp,/var/tmp/vim,/tmp,/var/tmp,.
 set directory=~/tmp/vim-backup,~/.tmp,/var/tmp/vim,/tmp,/var/tmp,.
 
@@ -35,8 +39,6 @@ set foldlevel=100
 
 command! TrailingWS %s/\s\+$//
 
-set guifont=Bitstream\ Vera\ Sans\ Mono\ 11
-set guioptions=gR
 set cursorline
 set ruler
 set number
