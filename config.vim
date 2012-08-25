@@ -2,7 +2,7 @@ set nocompatible
 lang en_GB.UTF-8
 
 set runtimepath+=~/.config/vim/
-set runtimepath+=~/.vim/ultisnips
+set runtimepath+=~/.config/vim/ultisnips
 let mapleader='\'
 
 filetype plugin on
