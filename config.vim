@@ -2,7 +2,6 @@ set nocompatible
 lang en_GB.UTF-8
 
 set runtimepath+=~/.config/vim/
-set runtimepath+=~/tools/go/misc/vim
 set runtimepath+=~/.vim/ultisnips
 let mapleader='\'
 
@@ -302,3 +301,9 @@ endif
 " snippet file support
 autocmd BufNewFile,BufRead /tmp/snippets set filetype=erlang
 autocmd BufNewFile,BufRead /tmp/snippets nnoremap <buffer> <C-S-C> "+yip
+
+" host-specific overrides
+let HOST_SPECIFIC_CONFIG=expand("~/.config/vim/host-specific.vim")
+if filereadable(HOST_SPECIFIC_CONFIG)
+    exe "source " . HOST_SPECIFIC_CONFIG
+endif
