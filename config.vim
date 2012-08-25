@@ -14,8 +14,8 @@ set showcmd
 autocmd GUIEnter * set vb t_vb=
 set clipboard=autoselect,unnamedplus
 
-set backupdir=~/tmp/vim-backup,~/.tmp,/var/tmp/vim,/tmp,/var/tmp,.
-set directory=~/tmp/vim-backup,~/.tmp,/var/tmp/vim,/tmp,/var/tmp,.
+set backupdir=~/.local/vim/backup,~/tmp/vim-backup,~/.tmp,/var/tmp/vim,/tmp,/var/tmp,.
+set directory=~/.cache/vim,~/tmp/vim-backup,~/.tmp,/var/tmp/vim,/tmp,/var/tmp,.
 
 set backspace=2
 set autoindent
