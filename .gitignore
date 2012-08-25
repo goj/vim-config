@@ -1,6 +1,6 @@
 /host-specific.vim
-/fuf/autoload/
-/fuf/doc/
-/fuf/plugin/
-/fuf/fuf.zip
-/fuf/l9.zip
+/bundle/fuf/autoload/
+/bundle/fuf/doc/
+/bundle/fuf/plugin/
+/bundle/fuf/fuf.zip
+/bundle/fuf/l9.zip

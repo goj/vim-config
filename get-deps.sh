@@ -1,2 +1,2 @@
 #!/bin/zsh
-(cd fuf && ./get-fuf.sh)
+(cd bundle/fuf && ./get-fuf.sh)
