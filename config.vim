@@ -192,6 +192,8 @@ autocmd BufRead,BufNewFile app.config set filetype=erlang
 autocmd BufRead,BufNewFile *.app,*.app.src set filetype=erlang
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.sql set filetype=mysql
+autocmd BufRead,BufNewFile *.coco set filetype=coffee
+autocmd BufRead,BufNewFile *.go set filetype=go
 
 autocmd FileType html,asciidoc,tex set spell
 
@@ -289,13 +291,11 @@ endif
 "     autocmd BufWrite *.erl,*.hrl execute ":silent !ctags **/*.{erl,hrl} > tags"
 " endif
 
-autocmd BufNewFile,BufRead *.coco set filetype=coffee
 
 " snippet file support
 autocmd BufNewFile,BufRead /tmp/snippets set filetype=erlang
 autocmd BufNewFile,BufRead /tmp/snippets nnoremap <buffer> <C-S-C> "+yip
 
 set runtimepath+=~/tools/go/misc/vim
-autocmd BufNewFile,BufRead *.go set filetype=go
 
 set runtimepath+=~/.vim/ultisnips
