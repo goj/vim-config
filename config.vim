@@ -202,7 +202,7 @@ autocmd BufRead,BufNewFile *.go set filetype=go
 
 autocmd FileType html,asciidoc,tex set spell
 
-command! TuneMySettings split ~/.vimrc
+command! TuneMySettings split $MYVIMRC
 
 iabbr #!E # coding: <C-r>=&encoding<Cr>
 iabbr ##I #ifndef __<C-r>=substitute(expand('%'), '\W', '_', 'g')<CR>__<Esc>BgU$"xy$o#define <C-o>"xp<Cr><Cr><Esc>"xpgccI#endif <C-CR><Esc>kkO
@@ -223,7 +223,7 @@ endfunction
 
 
 map <F1> <Esc>
-map <F2> :source ~/.vimrc<Esc>
+map <F2> :source $MYVIMRC<Esc>
 nmap <F3> :StarOccur<CR>
 nmap <F4> "zyiw:execute "grep -- \"\\b" . @z . "\\b\""<CR>
 vmap <F4> "zy:execute "grep -- \"" . @z . "\""<CR>
