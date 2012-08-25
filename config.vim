@@ -2,9 +2,9 @@ set nocompatible
 lang en_GB.UTF-8
 
 set runtimepath+=~/.config/vim/
-set runtimepath+=~/.config/vim/ultisnips
-set runtimepath+=~/.config/vim/tcomment
-set runtimepath+=~/.config/vim/fuf
+set runtimepath+=~/.config/vim/pathogen
+call pathogen#infect('~/.config/vim/bundle')
+
 let mapleader='\'
 
 filetype plugin on
