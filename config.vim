@@ -1,7 +1,11 @@
-let mapleader='\'
+set nocompatible
 lang en_GB.UTF-8
 
-set nocompatible
+set runtimepath+=~/.config/vim/
+set runtimepath+=~/tools/go/misc/vim
+set runtimepath+=~/.vim/ultisnips
+let mapleader='\'
+
 filetype plugin on
 filetype indent on
 
@@ -298,7 +302,3 @@ endif
 " snippet file support
 autocmd BufNewFile,BufRead /tmp/snippets set filetype=erlang
 autocmd BufNewFile,BufRead /tmp/snippets nnoremap <buffer> <C-S-C> "+yip
-
-set runtimepath+=~/tools/go/misc/vim
-
-set runtimepath+=~/.vim/ultisnips
