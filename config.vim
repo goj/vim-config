@@ -16,6 +16,10 @@ set clipboard=autoselect,unnamedplus
 
 set backupdir=~/.local/vim/backup,~/tmp/vim-backup,~/.tmp,/var/tmp/vim,/tmp,/var/tmp,.
 set directory=~/.cache/vim,~/tmp/vim-backup,~/.tmp,/var/tmp/vim,/tmp,/var/tmp,.
+set undodir=~/.local/vim/undo,~/tmp/vim-undo,/var/tmp/vim,/var/tmp,/tmp,.
+set undofile
+set undolevels=1000 "maximum number of changes that can be undone
+set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
 set backspace=2
 set autoindent
