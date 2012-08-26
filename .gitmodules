@@ -31,3 +31,6 @@
 [submodule "bundle/translit"]
 	path = bundle/translit
 	url = https://github.com/vim-scripts/translit.git
+[submodule "bundle/qfix-toggle"]
+	path = bundle/qfix-toggle
+	url = https://github.com/vim-scripts/QFixToggle.git
