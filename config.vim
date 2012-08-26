@@ -1,9 +1,10 @@
 set nocompatible
-lang en_GB.UTF-8
 
 set runtimepath+=~/.config/vim/
 set runtimepath+=~/.config/vim/pathogen
 call pathogen#infect('~/.config/vim/bundle')
+
+set enc=utf8
 
 let mapleader='\'
 
