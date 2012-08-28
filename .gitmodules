@@ -34,3 +34,6 @@
 [submodule "bundle/qfix-toggle"]
 	path = bundle/qfix-toggle
 	url = https://github.com/vim-scripts/QFixToggle.git
+[submodule "bundle/vcs-command"]
+	path = bundle/vcs-command
+	url = https://github.com/vim-scripts/vcscommand.vim.git
