@@ -181,6 +181,7 @@ nnoremap <Leader>eX dd:PyEvalReprLn<CR>P
 nnoremap <Leader>ee ddP:PyEvalStrLn<CR>p
 nnoremap <Leader>eE ddP:PyEvalReprLn<CR>p
 
+autocmd FileType go set noexpandtab
 autocmd FileType gitconfig     set noexpandtab
 autocmd FileType tags,automake,makefile set noexpandtab
 autocmd FileType tags,automake,makefile set tabstop=8
