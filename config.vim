@@ -196,6 +196,7 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufRead,BufNewFile *.sql set filetype=mysql
 autocmd BufRead,BufNewFile *.coco set filetype=coffee
 autocmd BufRead,BufNewFile *.go set filetype=go
+autocmd BufRead,BufNewFile *.pl set filetype=prolog
 
 autocmd FileType html,asciidoc,tex set spell
 
