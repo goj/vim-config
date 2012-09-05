@@ -1,5 +1,4 @@
 " Maintainer: Krzysztof Goj <Krzysztof-dot-Goj-at-gmail-dot-com>
-" Last Change: 27th March 2009
 
 set background=dark
 hi clear
@@ -21,8 +20,8 @@ hi VertSplit 	guifg=#202020 guibg=#202020 gui=none
 
 " Vim >= 7.0 specific colors
 if version >= 700
-    hi CursorLine     guibg=#0d0d0d
-    hi CursorColumn   guibg=#0d0d0d
+    hi CursorLine     guibg=#282828
+    hi CursorColumn   guibg=#282828
     hi MatchParen     guifg=Black      guibg=#FFCC20 gui=bold
 
     hi Pmenu          guifg=#141414    guibg=#CDA869
@@ -57,3 +56,13 @@ hi Function       guifg=#C7CA87     gui=none
 hi StorageClass   guifg=#C7CA87     gui=none
 
 hi PreProc        guifg=khaki4
+
+" VimDiff
+hi DiffAdd      guibg=#003300
+hi DiffDelete   guibg=#330000  gui=none guifg=fg
+hi DiffText     guibg=#5A5C39
+hi DiffChange   guibg=#2C2412
+
+" folding
+hi Folded       guibg=#28333B guifg=#719FA8 gui=bold
+hi FoldColumn   guibg=#28333B guifg=#719FA8 gui=bold
