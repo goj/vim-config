@@ -227,14 +227,16 @@ nmap <F4> "zyiw:execute "grep -- \"\\b" . @z . "\\b\""<CR>
 vmap <F4> "zy:execute "grep -- \"" . @z . "\""<CR>
 
 nmap <F5> :make<CR>
-nmap <F6> :QFix<CR>
+nmap <F6>   :call ToggleQuickfixList()<CR>
+nmap <C-F6> :call ToggleLocationList()<CR>
 nmap <F7> :cp<CR>
 nmap <F8> :cn<CR>
+nmap <C-F7> :lp<CR>
+nmap <C-F8> :lne<CR>
 nmap <F9> @@
 nmap <F10> @:
 
 nmap <F12> :call ToggleRelNum()<CR>
-
 
 nmap <C-N> :tn<CR>
 nmap <C-P> :tp<CR>
@@ -302,8 +304,16 @@ endif
 autocmd BufNewFile,BufRead /tmp/snippets set filetype=erlang
 autocmd BufNewFile,BufRead /tmp/snippets nnoremap <buffer> <C-S-C> "+yip
 
+" synthactic plugin config
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+
 " host-specific overrides
 let HOST_SPECIFIC_CONFIG=expand("~/.config/vim/host-specific.vim")
 if filereadable(HOST_SPECIFIC_CONFIG)
     exe "source " . HOST_SPECIFIC_CONFIG
 endif
+
+" cleanup after the bad plugins
+autocmd VimEnter * nunmap <Leader>l
+autocmd VimEnter * nunmap <Leader>q

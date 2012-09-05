@@ -31,9 +31,6 @@
 [submodule "bundle/translit"]
 	path = bundle/translit
 	url = https://github.com/vim-scripts/translit.git
-[submodule "bundle/qfix-toggle"]
-	path = bundle/qfix-toggle
-	url = https://github.com/vim-scripts/QFixToggle.git
 [submodule "bundle/vcs-command"]
 	path = bundle/vcs-command
 	url = https://github.com/vim-scripts/vcscommand.vim.git
@@ -43,3 +40,9 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/togglelist"]
+	path = bundle/togglelist
+	url = https://github.com/milkypostman/vim-togglelist.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
