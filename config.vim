@@ -226,7 +226,7 @@ endfunction
 
 map <F1> <Esc>
 map <F2> :source $MYVIMRC<Esc>
-nmap <F3> :StarOccur<CR>
+nmap <F3> :GundoToggle<CR>
 nmap <F4> "zyiw:execute "grep -- \"\\b" . @z . "\\b\""<CR>
 vmap <F4> "zy:execute "grep -- \"" . @z . "\""<CR>
 
