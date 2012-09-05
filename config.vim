@@ -317,3 +317,5 @@ endif
 " cleanup after the bad plugins
 autocmd VimEnter * nunmap <Leader>l
 autocmd VimEnter * nunmap <Leader>q
+autocmd FileType go unmap <buffer> <LocalLeader>f
+autocmd FileType go unmap <buffer> <LocalLeader>F
