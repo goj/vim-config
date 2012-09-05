@@ -13,6 +13,7 @@ hi Normal         guifg=#F8F8F8    guibg=#141414
 hi Cursor         guifg=Black      guibg=Green    gui=none
 hi LineNr         guifg=#777777    guibg=Black
 hi NonText 		  guifg=#808080    guibg=#202020
+hi SignColumn     guifg=#808080    guibg=#202020
 
 hi StatusLine 	guifg=#F8F8F8 guibg=#202020 gui=bold
 hi StatusLineNC guifg=#777777 guibg=#202020 gui=none
@@ -25,7 +26,7 @@ if version >= 700
     hi MatchParen     guifg=Black      guibg=#FFCC20 gui=bold
 
     hi Pmenu          guifg=#141414    guibg=#CDA869
-    hi PmenuSel       guifg=#F8F8F8    guibg=#9B703F
+    hi PmenuSel       guifg=#F8F8F8    guibg=#9B703F gui=bold
     hi PmenuSbar                       guibg=#DAEFA3
     hi PmenuThumb     guifg=#8F9D6A
 endif
